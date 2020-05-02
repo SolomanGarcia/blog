@@ -73,6 +73,7 @@ header::before {
   min-height: 200px;
   overflow: hidden;
   transition: all 0.25s ease;
+  cursor: pointer;
 } 
 
 .post:hover {
