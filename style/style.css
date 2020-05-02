@@ -74,6 +74,7 @@ header::before {
   overflow: hidden;
   transition: all 0.25s ease;
   cursor: pointer;
+  margin-top: 24px;
 } 
 
 .post:hover {
@@ -120,7 +121,7 @@ header::before {
 }
 
 .nav-button.new-post-button {
-  position: absolute;
+  position: fixed;
   bottom: 30px;
   right: 30px;
   font-size: 24px;
