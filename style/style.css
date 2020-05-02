@@ -53,8 +53,6 @@ header::before {
 }
 
 .main {
-  background-color: teal;
-  height: 100px;
   margin-top: 32px;
   display: flex;
   justify-content: center;
@@ -66,6 +64,25 @@ header::before {
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
+}
+
+.post {
+  display: flex;
+  border: 1px solid #eaecee;
+  border-radius: 8px;
+  min-height: 200px;
+  overflow: hidden;
+}
+
+.post-image {
+  flex-basis: 40%;
+  background-image: url(https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+
+.post-content {
+  flex-basis: 60%;
 }
 
 footer {
