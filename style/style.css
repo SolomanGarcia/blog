@@ -133,6 +133,11 @@ header::before {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
+  transition: all 0.25s ease;
+}
+
+.nav-button.new-post-button:hover {
+  background-color: #002349;
 }
 
 footer {
