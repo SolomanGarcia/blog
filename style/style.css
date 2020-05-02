@@ -103,6 +103,15 @@ header::before {
   margin: 0;
 }
 
+.post-text {
+  margin-top: 4px;
+  color: #495057;
+  font-weight: 400;
+  line-height: 1.4;
+  max-height: 65px;
+  overflow: hidden;
+}
+
 footer {
   min-height: 100px;
   background-color: #eaecee70;
