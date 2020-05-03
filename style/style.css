@@ -151,6 +151,11 @@ header::before {
   padding: 5px 8px;
 }
 
+.navigation a:hover {
+  background-color: #004186;
+  color: white;
+}
+
 a.post-link {
   text-decoration: none;
 }
