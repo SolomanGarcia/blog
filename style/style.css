@@ -46,7 +46,7 @@ header::before {
   background-size: cover;
 }
 
-.profile-name, title {
+.profile-name, .title {
   font-size: 3em;
   font-weight: bold;
 }
