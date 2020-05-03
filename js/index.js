@@ -20,8 +20,8 @@ const getPosts = () => {
 const buildPosts = (blogPosts) => {
   let blogPostscontent = '';
 
-  for (blogPosts of blogPosts) {
-    const postDate = new Date(blogPost.added_date).toDateString();
+  for (blogPost of blogPosts) {
+    const postDate = new Date(parseInt(blogPost.added_date)).toDateString();
     blogPostscontent += `
     <div class="post">
         <div class="post-image"></div>
@@ -33,4 +33,5 @@ const buildPosts = (blogPosts) => {
     </div>
     `
   }
+  document.querySelector('.blog-posts').innerHTML = blogPostscontent;
 }
