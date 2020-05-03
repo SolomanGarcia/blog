@@ -18,5 +18,19 @@ const getPosts = () => {
 }
 
 const buildPosts = (blogPosts) => {
+  let blogPostscontent = '';
 
+  for (blogPosts of blogPosts) {
+    const postDate = new Date(blogPost.added_date).toDateString();
+    blogPostscontent += `
+    <div class="post">
+        <div class="post-image"></div>
+        <div class="post-content">
+          <div class="post-date">${postDate}</div>
+          <div class="post-title"><h4>${blogPost.title}</h4></div>
+          <div class="post-text">${blogPost.content}</div>
+        </div>
+    </div>
+    `
+  }
 }
