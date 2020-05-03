@@ -25,5 +25,10 @@ const getPost = () => {
 };
 
 const buildPost = (data) => {
-    // HINT: Convert the date number to a Date string 
+  const postDate = new Date(parseInt(data.added_date)).toDateString();
+  const postImage = `${API_BASE_URL}${data.post_image}`;
+  document.querySelector('header').style.backgroundImage = `url(${postImage})`;
+  document.getElementById('individual-post-title').innerText = data.title;
+  document.getElementById('individual-post-date').innerText = `Published on ${postDate}`;
+  document.getElementById('individual-post-content').innerText = data.content;
 };
