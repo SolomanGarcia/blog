@@ -148,6 +148,10 @@ header::before {
   padding: 5px 8px;
 }
 
+a.post-link {
+  text-decoration: none;
+}
+
 footer {
   min-height: 100px;
   background-color: #eaecee70;

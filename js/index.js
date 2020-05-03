@@ -25,7 +25,7 @@ const buildPosts = (blogPosts) => {
     const postImage = `${API_BASE_URL}${blogPost.post_image}`;
     const postLink = `/post.html?id=${blogPost.id}`;
     blogPostscontent += `
-    <a href="${postLink}">
+    <a class="post-link" href="${postLink}">
       <div class="post">
           <div class="post-image" style="background-image: url(${postImage})"></div>
           <div class="post-content">
